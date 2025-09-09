@@ -1,0 +1,209 @@
+<!-- Created by Abdur Rabby-->
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+::selection{
+color:white;
+background:#262626;
+
+}
+body{
+background:#E8EAF6;
+margin:0px;
+padding:0px;
+min-width:355px;
+max-width:355px;
+}
+h1{
+background:blue;
+display:inline-block;
+padding:10px 32px;
+color:white;
+font-size:24px;
+box-shadow:0 0 0 5.7px #9FA8DA;
+font-family:monospace;
+margin:15px 43px;
+font-weight:300;
+border-radius:42px;
+animation:b5 1s linear infinite alternate;
+}
+@keyframes b5{
+to{
+box-shadow:0 0 0 9px #9FA8DA;
+}
+
+}
+div{
+box-sizing:border-box;
+display:inline-block;
+margin:64px 45px;
+}
+.loader1{
+width:54px;
+height:58px;
+background:blue;
+animation:blob 2s cubic-bezier(.89,.65,.63,.98) infinite;
+border-radius:42% 58% 56% 44% / 46% 48% 52% 54%; 
+}
+@keyframes blob{
+33.9%{
+border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+59%{border-radius:56% 44% 54% 46% / 51% 84% 16% 49% ;
+}
+74.5%{
+border-radius:32% 68% 28% 72% / 74% 55% 45% 26% ;
+}
+100%{border-radius:65% 35% 9% 91% / 49% 99% 1% 51% ;
+}
+}
+.loader2{
+width:44px;
+height:44px;
+background:blue;
+border-radius:50%;
+animation:shape 1500ms linear infinite;
+}
+
+@keyframes shape{
+29.4%{
+clip-path: polygon(99% 0, 0 100%, 100% 100%, 0 0);
+}
+54.9%{
+clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+89.5%{clip-path: polygon(50% 0%, 80% 17%, 50% 67%, 23% 19%);
+}
+}
+.loader3{
+width:130px;
+height:60px;
+background:transparent;
+position:relative;
+z-index:;
+}
+.loader3 span{
+width:16%;
+height:34.6%;
+border-radius:50%;
+
+background:blue;
+position:absolute;
+top:50%;
+animation:shape1 1s infinite;
+
+z-index:;
+}
+.loader3 span:nth-child(1){
+left:3%;
+animation-delay:0.3s;
+}
+.loader3 span:nth-child(2){
+left:21%;
+animation-delay:.7s;
+}
+.loader3 span:nth-child(3){
+left:39%;
+animation-delay:1.11s;
+}
+.loader3 span:nth-child(4){
+left:59%;
+animation-delay:1.56s;
+}
+.loader3 span:nth-child(5){
+left:76%;
+animation-delay:1.79s;
+
+}
+@keyframes shape1{
+from{
+transform:scale(0);
+opacity:0.5;
+filter:blur(.3px);
+}
+
+to{
+transform:scale(.8);
+
+}
+}
+
+.loader4{
+width:130px;
+height:60px;
+background:transparent;
+position:relative;
+z-index:;
+}
+.loader4 b{
+width:6%;
+height:12%;
+
+background:blue;
+position:absolute;
+top:50%;
+animation:shape2 460ms infinite;
+
+z-index:;
+}
+.loader4 b:nth-child(1){
+left:3%;
+animation-delay:0.1s;
+}
+.loader4 b:nth-child(2){
+left:22%;
+animation-delay:.267s;
+}
+.loader4 b:nth-child(3){
+left:39%;
+animation-delay:.54s;
+}
+.loader4 b:nth-child(4){
+left:59%;
+animation-delay:.756s;
+}
+.loader4 b:nth-child(5){
+left:76%;
+animation-delay:.8900s;
+}
+@keyframes shape2{
+to{
+transform:scaleY(6);
+}
+}
+</style>
+<title></title>
+</head>
+<body>
+<h1>blob loader</h1>
+<div class="loader1"></div>
+<h1>shape loader</h1>
+<div class="loader2"></div>
+<h1>dot loader</h1>
+<div class="loader3">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+
+</div>
+<h1>bar loader</h1>
+<div class="loader4">
+<b></b>
+<b></b>
+<b></b>
+<b></b>
+<b></b>
+
+</div>
+<h1 style="text-align:center;display:flex;
+align-items:center;justify-content:center;">
+<a style="text-decoration:none;color:white;" href="https://www.sololearn.com/Profile/21580764/?ref=app">
+Abdur Rabby</a>
+</h1>
+
+</body>
+</html>
