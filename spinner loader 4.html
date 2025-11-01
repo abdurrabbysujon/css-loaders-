@@ -1,0 +1,179 @@
+<!-- Created by Abdur Rabby Sujon-->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+alert(" I wanted to create many loaders, but I didn't know how to code.I'm panting while coding. And please tell me what improvements would be good in the code. ");
+</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style type="text/css">
+
+body {
+max-width:310px;
+}
+h1 a{
+    
+    text-decoration:none;
+    color:white;
+}
+
+body{
+}
+h1{
+background:#116DFF;
+color:white;
+font-weight:500;
+font-family:monospace;
+margin:7px 14px;
+text-align:center;
+padding:10px 43px;
+font-size:23px;
+border-radius:23px;
+
+}
+div{
+margin:26px 34px;
+display:block;
+height:29px;
+width:29px;
+background:#116DFf;
+border-sizing:border-box;
+}
+.loader1{
+border-radius:50%;
+animation:rotate 600ms ease-in-out infinite ;
+}
+@keyframes rotate{
+to{transform:perspective(200px) rotateY(360deg);
+}
+}
+.loader2{border-radius:50%;
+background: radial-gradient(farthest-side,#116Dff 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%,#116dff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner2 1s infinite linear;
+}
+
+@keyframes spinner2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}
+
+.loader3{border-radius:48%;
+background:repeating-conic-gradient(#116Dff 5%,white 25%);
+animation:rotate2 1500ms infinite linear;
+}
+@keyframes rotate2{
+to{
+transform:rotate(360deg);
+}
+}
+.loader4{
+border-radius:40%;
+position:relative;
+text-align:center;
+background:linear-gradient(45deg,#116DFf,white);
+animation:rotate 500ms  infinite ease;
+}
+.loader4::before{
+content:'';
+position:absolute;
+width:80%;
+height:80%;
+background:linear-gradient(45deg,white,#116Dff);
+top:2.6px;
+left:3.2px;
+border-radius:40%;
+z-index:2 !important;
+}
+.loader5{
+background:none;
+border-radius:50%;
+border-right-color:#fff !important;
+border-top-color:#116DFF !important;
+animation:rotate1 700ms linear infinite ;
+border:3px solid transparent;
+}
+@keyframes rotate1{
+100%{transform:rotate(360deg);
+opacity:0;
+}
+60%{opacity:1;
+}
+10%{
+opacity:0;
+}
+}
+.loader6{
+border-radius:50%;
+position:relative;
+overflow:hidden;
+background:#E8EAF6 !important;
+animation:rotate3 2s linear infinite alternate;
+}
+.loader6::after{
+content:'';
+width:100%;
+height:100%;
+background:rgba(24,116,255,0.9);
+position:absolute;
+z-index:2;
+clip-path: polygon(100% 0, 0 0, 100% 100%, 0% 100%);
+}
+@keyframes rotate3{
+to{transform:translate(150px) rotate(2turn);
+}
+}
+.loader7{
+position:relative;
+overflow:hidden;
+border-radius:50%;
+background:#E8EAF6;
+animation:spinner2 1.3s linear infinite;
+
+}
+.loader7::before{
+content:'';
+width:25%;
+border-radius:50%;
+top:37%;
+left:36%;
+height:25%;
+background:#E8EAF6;
+position:absolute;
+z-index:3;
+}
+.loader7::after{
+content:'';
+width:100%;
+height:100%;
+background:rgba(24,116,255,0.9);
+position:absolute;
+z-index:2;
+clip-path: polygon(100% 0, 0 0, 100% 100%, 0% 100%);
+}
+
+</style>
+</head>
+<body>
+<h1> spinner loader</h1>
+<div class="loader1"> </div>
+<div class="loader2"></div>
+<div class="loader3"></div>
+<div class="loader4"> </div>
+<div class="loader5"></div>
+<div class="loader6"></div>
+<div class="loader7"></div>
+
+
+<h1><a href="https://www.github.com/abdurrabbysujon
+"><i class="fa-brands fa-github fa-bounce"></i>github
+</a></h1>
+
+
+</body>
+</html>
